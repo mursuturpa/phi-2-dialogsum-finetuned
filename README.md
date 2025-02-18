@@ -22,6 +22,16 @@ jupyter notebook phi-2-dialogsum-finetuned.ipynb
 ## References
 - [DialogSum Dataset](https://huggingface.co/datasets/neil-code/dialogsum-test)
 - [Fine-tuning Guide](https://ai.stackexchange.com/questions/41485)
+- [Model in huggingface](https://huggingface.co/mursuturpa/phi-2-dialogsum-finetuned)
+
+# Errors fixed
+- Fixed error "AttributeError: module 'rouge_score' has no attribute '__version__'.""
+- Library was not installed !pip install pynvml
+- Train the fine-tuned model with the following configuration, which had to be edited
+    a. max_steps = 500
+    b. logging_steps = 50
+    c. eval_steps = 50
+  - Corrected path to Peft model
 
 ## License
-MIT License
+-
